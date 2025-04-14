@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empresa de Desenvolvimento</title>
+    <link rel="stylesheet" href="empresa.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <img src="software.webp" class="logo" alt="Logomarca da Empresa">
+
+    <div class="container">
+        <div class="header">Empresa de Desenvolvimento de Software</div>
+        <p><strong>Endereço:</strong> Rua das Startups, 123 - São Paulo, SP</p>
+
+        <div class="info-box">💰 Gastos Iniciais: <span id="total-gastos-iniciais">R$ 0</span></div>
+        <div class="info-box">📆 Gastos Mensais: <span id="total-gastos-mensais">R$ 0</span></div>
+
+        <h2>💰 Gastos Iniciais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Valor (R$)</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-gastos-iniciais"></tbody>
+        </table>
+
+        <h2>📆 Gastos Mensais</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Valor (R$)</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-gastos-mensais"></tbody>
+        </table>
+
+        <h2>📈 Quantos Clientes são Necessários?</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Plano</th>
+                    <th>Preço Mensal (R$)</th>
+                    <th>Clientes Necessários</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-clientes"></tbody>
+        </table>
+
+        <h2>📊 Comparação de Gastos</h2>
+        <div class="chart-container">
+            <canvas id="graficoGastos"></canvas>
+        </div>
+    </div>
+
+    <script src="empresa.js"></script>
+</body>
+</html>
